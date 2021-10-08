@@ -4,7 +4,7 @@ with open('README.md', 'r') as f:
     long_description = f.read()
 
 requirements = [
-    #'pycep_correios>=5.0.0',
+    'pycep_correios>=5.0.0',
     'requests>=2.10.1',
 ]
 
@@ -16,10 +16,10 @@ setup(
     version=__version__,
     author='Michel Metran',
     author_email='michelmetran@gmail.com',
-    description='TestConda',
+    description='Test Conda',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/open-dsa/gerador_endereco',
+    url='https://github.com/traquitanas/arrebol',
     package_dir = {'': 'src'}, # Our packages live under src but src is not a package itself    
     packages=find_packages('src', exclude=['tests']),
     #py_modules = ['traquitanas'], # Quando trata-se apenas de um módulo

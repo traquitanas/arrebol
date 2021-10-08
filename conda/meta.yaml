@@ -1,5 +1,5 @@
 {% set name = "arrebol" %}
-{% set version = "1.0.1" %}
+{% set version = "1.0.3" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,6 @@ package:
 
 source:
   path: ..
-  #folder: ./my-destination
 
 # Se usar o build aqui, com pip, não deve ser usando o arquivo build.sh (e setuptools).
 build:
@@ -17,7 +16,7 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python 3.6
     - requests
     #- setuptools
     #- pycep_correios
@@ -26,9 +25,13 @@ requirements:
     - python
 
 about:
-  home: https://palletsprojects.com/p/click/
-  license: BSD
-  license_family: BSD
+  home: https://github.com/traquitanas/arrebol
+  license: MIT
+  license_family: MIT
   license_file: LICENSE
-  summary: Composable command line interface toolkit
-  doc_url: https://badlands.readthedocs.io/
+  summary: Testes do GitAction
+  doc_url: https://arrebol.readthedocs.io/
+  description: |
+    The AWRA modelling system (AWRAMS) has been deve
+  doc_url: https://github.com/traquitanas/arrebol
+  dev_url: https://github.com/traquitanas/arrebol
