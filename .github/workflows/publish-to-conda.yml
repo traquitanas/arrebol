@@ -10,10 +10,12 @@ jobs:
     - uses: actions/checkout@master
 
     - name: Publish distribution 📦 to Conda
-      uses: maxibor/conda-package-publish-action@v1.1
+      uses: elbeejay/conda-publish-action@v1.5 #maxibor/conda-package-publish-action@v1.1
       with:
-        subDir: 'conda'
-        AnacondaToken: ${{ secrets.ANACONDA_TOKEN }}        
+        subdir: 'conda'
+        anacondatoken: ${{ secrets.ANACONDA_TOKEN }}
+        platforms: 'win osx linux'
+        #AnacondaToken: ${{ secrets.ANACONDA_TOKEN }}        
 
 
 
