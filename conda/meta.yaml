@@ -1,0 +1,34 @@
+{% set name = "arrebol" %}
+{% set version = "1.0.1" %}
+
+package:
+  name: "{{ name|lower }}"
+  version: "{{ version }}"
+
+source:
+  path: ..
+  #folder: ./my-destination
+
+# Se usar o build aqui, com pip, não deve ser usando o arquivo build.sh (e setuptools).
+build:
+  number: 0
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --use-feature=in-tree-build -vv "
+
+requirements:
+  host:
+    - pip
+    - python
+    - requests
+    #- setuptools
+    #- pycep_correios
+
+  run:
+    - python
+
+about:
+  home: https://palletsprojects.com/p/click/
+  license: BSD
+  license_family: BSD
+  license_file: LICENSE
+  summary: Composable command line interface toolkit
+  doc_url: https://badlands.readthedocs.io/
