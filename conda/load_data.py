@@ -6,3 +6,4 @@ if os.path.isfile(setup_cfg):
     for kwargs in read_configuration(setup_cfg).values():
         #setup_cfg_data.update(kwargs)
         print(kwargs)
+
