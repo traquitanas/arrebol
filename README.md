@@ -14,7 +14,7 @@ conda install conda-build
 
 ```bash
 conda activate pablocarreira-py38
-conda-build ./conda -c src/label/main # Funciona!
+conda-build ./conda -c src/label/main
 ```
 
 <br>
@@ -38,10 +38,9 @@ do
 done
 ```
 
-
 <br>
 
- Para fins de teste
+Para fins de teste
 
 ```bash
 conda create --name michel-py38 -c conda-forge -c michelmetran python=3.8 jupyter jupyterlab jupyter_contrib_nbextensions nb_conda nbstripout nbconvert=5.6.1 arrebol pandas requests nodejs tornado=5.1.1
