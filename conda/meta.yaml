@@ -30,8 +30,7 @@ about:
   license_family: MIT
   license_file: LICENSE
   summary: Testes do GitAction
-  doc_url: https://arrebol.readthedocs.io/
   description: |
-    The AWRA modelling system (AWRAMS) has been deve
+    Teste do Pacote
   doc_url: https://github.com/traquitanas/arrebol
   dev_url: https://github.com/traquitanas/arrebol

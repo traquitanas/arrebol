@@ -2,25 +2,38 @@
 
 <br>
 
-### Build Conda
+Pacote criado com a finalidade única de testar como subir um pacote para o conda.
+
+O pacote deve ficar aqui:
+- https://anaconda.org/michelmetran/repo
+
+<br>
+
+----
+
+### Passos
 
 Inicialmente é necessário instalar o [conda-build](https://docs.conda.io/projects/conda-build/en/latest/index.html) com o comando:
 
 ```bash
+conda activate pablocarreira-py39
 conda install conda-build
 ```
 
 <br>
 
 ```bash
-conda activate pablocarreira-py38
+conda activate pablocarreira-py39
 conda-build ./conda -c src/label/main
 ```
 
 <br>
 
-## GitActions: publicar pacotes no Conda
+----
 
+## GitActions
+
+publicar pacotes no Conda
 Adicionar converters
 
 ```bash
@@ -40,28 +53,15 @@ done
 
 <br>
 
-Para fins de teste
+----
 
-```bash
-conda create --name michel-py38 -c conda-forge -c michelmetran python=3.8 jupyter jupyterlab jupyter_contrib_nbextensions nb_conda nbstripout nbconvert=5.6.1 arrebol pandas requests nodejs tornado=5.1.1
-```
-
-<br>
-
-**Referências**:
+### Referências
 
 - https://www.asmeurer.com/conda-docs-test/docs/building/meta-yaml.html
-
 - https://anaconda.org/michelmetran/dashboard
-
 - https://docs.conda.io/projects/conda-build/en/latest/concepts/channels.html
-
 - https://levelup.gitconnected.com/publishing-your-python-package-on-conda-and-conda-forge-309a405740cf
-
 - https://www.youtube.com/watch?v=HSK-6dCnYVQ
-
 - https://giswqs.medium.com/building-a-conda-package-and-uploading-it-to-anaconda-cloud-6a3abd1c5c52
-
 - https://github.com/maxibor/conda-package-publish-action
-
 - https://github.com/rfun/tethysapp-servicetest/blob/master/.github/workflows/main.yml

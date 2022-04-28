@@ -3,8 +3,6 @@ import requests
 from pycep_correios import get_address_from_cep, WebService
 
 
-
-
 def get_list_ceps_bairros(estado='sp', municipio='piracicaba', loops=20):
     """
     Função que auxilia na definição de endereços aleatórios em uma cidade.
@@ -51,7 +49,6 @@ def get_list_ceps_bairros(estado='sp', municipio='piracicaba', loops=20):
         )
     )
     return list_ceps, list_bairros
-
 
 
 def get_random_complete_address(cep):

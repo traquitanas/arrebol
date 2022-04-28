@@ -19,9 +19,9 @@ setup(
     description='Test Conda',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/traquitanas/arrebol2',
+    url='https://github.com/traquitanas/arrebol',
     package_dir = {'': 'src'}, # Our packages live under src but src is not a package itself    
-    packages=find_packages('src', exclude=['tests']),
+    packages=find_packages('src', exclude=['test']),
     #py_modules = ['traquitanas'], # Quando trata-se apenas de um módulo
     install_requires=requirements,
     keywords='python, endereço aleatório, address',
