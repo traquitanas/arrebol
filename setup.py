@@ -22,7 +22,6 @@ setup(
     url='https://github.com/traquitanas/arrebol',
     package_dir = {'': 'src'}, # Our packages live under src but src is not a package itself
     packages=find_packages('src', exclude=['test']),
-    #py_modules = ['traquitanas'], # Quando trata-se apenas de um módulo
     install_requires=requirements,
     keywords='python, endereço aleatorio, address',
     classifiers=[
@@ -32,5 +31,4 @@ setup(
         'Natural Language :: Portuguese',
         'Intended Audience :: Developers',
     ],
-    #license='MIT',
 )
