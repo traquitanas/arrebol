@@ -24,7 +24,7 @@ setup(
     packages=find_packages('src', exclude=['test']),
     #py_modules = ['traquitanas'], # Quando trata-se apenas de um módulo
     install_requires=requirements,
-    keywords='python, endereço aleatório, address',
+    keywords='python, endereço aleatorio, address',
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',
@@ -32,4 +32,5 @@ setup(
         'Natural Language :: Portuguese',
         'Intended Audience :: Developers',
     ],
+    license='MIT',
 )

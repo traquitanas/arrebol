@@ -1,43 +1,50 @@
-{% set name = "arrebol" %}
-{% set version = "1.0.8" %}
+#{% set name = "arrebol" %}
+#{% set version = "1.0.8" %}
+{% set data = load_setup_py_data() %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ data['name'] }}
+  version: {{ data['__version__'] }}
 
 source:
   path: ..
 
 # Se usar o build aqui, com pip, não deve ser usando o arquivo build.sh (e setuptools).
-# build:
-#   number: 0
-#   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --use-feature=in-tree-build -vv "
+build:
+  number: 0
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --use-feature=in-tree-build -vv "
 
 requirements:
   build:
     - python
     - setuptools
-    - numpy 1.16
+    - numpy>=1.11.1,<=1.16.0
     - conda-verify
 
-  host:
-    - pip
-    - python 3.6
-    - requests
-    - numpy 1.16 # numpy version specified in conda_build_config.yaml
+#   host:
+#     - pip
+#     - python 3.6
+#     - requests
+#     - numpy>=1.11.1,<=1.16.0
     #- setuptools
     #- pycep_correios
 
   run:
     - python
+    - numpy>=1.11.1,<=1.16.0
+    - requests
+
+test:
+  imports:
+    - {{ data['name'] }}
 
 about:
-  license: MIT
+  license: {{ data['license'] }}
   license_family: MIT
   license_file: LICENSE
-  summary: Testes do GitAction
+  summary: {{ data['description'] }}
   description: |
     Teste do Pacote
-  home: https://github.com/traquitanas/arrebol
+  home: {{ data['url'] }}
   doc_url: https://github.com/traquitanas/arrebol
   dev_url: https://github.com/traquitanas/arrebol
