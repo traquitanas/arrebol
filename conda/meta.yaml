@@ -4,7 +4,7 @@
 
 package:
   name: arrebol
-  version: {{ data['__version__'] }}
+  version: {{ data['version'] }}
 
 source:
   path: ..
