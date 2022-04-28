@@ -5,7 +5,9 @@
 Pacote criado com a finalidade única de testar como subir um pacote para o conda.
 
 O pacote deve ficar aqui:
+- https://anaconda.org/michelmetran/dashboard
 - https://anaconda.org/michelmetran/repo
+- https://github.com/traquitanas/arrebol
 
 <br>
 
@@ -58,7 +60,6 @@ done
 ### Referências
 
 - https://www.asmeurer.com/conda-docs-test/docs/building/meta-yaml.html
-- https://anaconda.org/michelmetran/dashboard
 - https://docs.conda.io/projects/conda-build/en/latest/concepts/channels.html
 - https://levelup.gitconnected.com/publishing-your-python-package-on-conda-and-conda-forge-309a405740cf
 - https://www.youtube.com/watch?v=HSK-6dCnYVQ
