@@ -30,6 +30,8 @@ conda-build ./conda -c src/label/main
 
 ## GitActions
 
+
+https://github.com/fcakyon/conda-publish-action
 publicar pacotes no Conda
 Adicionar converters
 
