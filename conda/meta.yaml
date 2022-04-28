@@ -1,5 +1,5 @@
 {% set name = "arrebol" %}
-{% set version = "1.0.7" %}
+{% set version = "1.0.8" %}
 
 package:
   name: "{{ name|lower }}"
@@ -17,6 +17,8 @@ requirements:
   build:
     - python
     - setuptools
+    - numpy 1.16
+    - conda-verify
 
   host:
     - pip
@@ -30,12 +32,12 @@ requirements:
     - python
 
 about:
-  home: https://github.com/traquitanas/arrebol
   license: MIT
   license_family: MIT
   license_file: LICENSE
   summary: Testes do GitAction
   description: |
     Teste do Pacote
+  home: https://github.com/traquitanas/arrebol
   doc_url: https://github.com/traquitanas/arrebol
   dev_url: https://github.com/traquitanas/arrebol
