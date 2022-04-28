@@ -21,11 +21,11 @@ requirements:
     - numpy>=1.11.1,<=1.16.0
     - conda-verify
 
-#   host:
-#     - pip
-#     - python 3.6
-#     - requests
-#     - numpy>=1.11.1,<=1.16.0
+  host:
+    - pip
+    - python 3.6
+    - requests
+    - numpy>=1.11.1,<=1.16.0
     #- setuptools
     #- pycep_correios
 
@@ -39,15 +39,12 @@ requirements:
 #     - arrebol
 
 about:
-  #license: {{ data['license'] }}
-  license: MIT
+  license: MIT # {{ data['license'] }}
   license_family: MIT
   license_file: LICENSE
-  #summary: {{ data['description'] }}
-  summary: sssss
+  summary: sssss # {{ data['description'] }}
   description: |
     Teste do Pacote
-  #home: {{ data['url'] }}
-  home: https://github.com/traquitanas/arrebol
+  home: https://github.com/traquitanas/arrebol # {{ data['url'] }}
   doc_url: https://github.com/traquitanas/arrebol
   dev_url: https://github.com/traquitanas/arrebol
