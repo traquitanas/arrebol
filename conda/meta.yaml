@@ -1,6 +1,6 @@
+{% set data = load_setup_py_data() %}
 #{% set name = "arrebol" %}
 #{% set version = "1.0.8" %}
-{% set data = load_setup_py_data() %}
 
 package:
   name: arrebol
