@@ -1,10 +1,10 @@
 {% set data = load_setup_py_data() %}
 #{% set name = "arrebol" %}
-#{% set version = "1.0.8" %}
+{% set version = "1.0.8" %}
 
 package:
   name: arrebol
-  version: {{ data['version'] }}
+  version: version # {{ data['version'] }}
 
 source:
   path: ..
@@ -34,17 +34,20 @@ requirements:
     - numpy>=1.11.1,<=1.16.0
     - requests
 
-test:
-  imports:
-    - arrebol
+# test:
+#   imports:
+#     - arrebol
 
 about:
-  license: {{ data['license'] }}
+  #license: {{ data['license'] }}
+  license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: {{ data['description'] }}
+  #summary: {{ data['description'] }}
+  summary: sssss
   description: |
     Teste do Pacote
-  home: {{ data['url'] }}
+  #home: {{ data['url'] }}
+  home: https://github.com/traquitanas/arrebol
   doc_url: https://github.com/traquitanas/arrebol
   dev_url: https://github.com/traquitanas/arrebol
