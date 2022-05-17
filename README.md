@@ -1,13 +1,19 @@
 # Arrebol
 
+
 <br>
+
+- https://github.com/traquitanas/arrebol
+- https://anaconda.org/michelmetran/arrebol
+
+
 
 Pacote criado com a finalidade única de testar como subir um pacote para o conda.
 
 O pacote deve ficar aqui:
 - https://anaconda.org/michelmetran/dashboard
 - https://anaconda.org/michelmetran/repo
-- https://github.com/traquitanas/arrebol
+
 
 <br>
 
