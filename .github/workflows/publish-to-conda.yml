@@ -10,8 +10,6 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Publish distribution 📦 to Conda
-      #uses: elbeejay/conda-publish-action@v1.5
-      #uses: maxibor/conda-package-publish-action@v1.1
       uses: fcakyon/conda-publish-action@v1.3
       with:
         subdir: 'conda'

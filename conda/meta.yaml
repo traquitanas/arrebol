@@ -1,10 +1,10 @@
-#{% set data = load_setup_py_data() %}
+{% set data = load_setup_py_data() %}
 #{% set name = "arrebol" %}
 {% set version = "1.0.9" %}
 
 package:
   name: arrebol
-  version: version # {{ data['version'] }}
+  version: {{ data['version'] }}
 
 source:
   path: ..
@@ -43,7 +43,7 @@ about:
   license: MIT # {{ data['license'] }}
   license_family: MIT
   license_file: LICENSE
-  summary: sssss # {{ data['description'] }}
+  summary: {{ data['description'] }}
   description: |
     Teste do Pacote
   doc_url: https://github.com/traquitanas/arrebol

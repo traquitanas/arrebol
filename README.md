@@ -32,9 +32,16 @@ conda-build ./conda -c src/label/main
 
 ---
 
-## GitActions
+### GitActions
 
 Há um [GitAction](https://github.com/fcakyon/conda-publish-action) para publicar pacotes no Conda. A vantagem é que ele converte o _build_ para outras plataformas (adicionar converters)!
+
+Já tentei outros, porém abandonei por falhas:
+
+- elbeejay/conda-publish-action@v1.5
+- maxibor/conda-package-publish-action@v1.1
+
+<br>
 
 ```bash
 # Convert Package to Other Platforms
