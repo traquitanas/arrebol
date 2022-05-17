@@ -8,11 +8,11 @@ requirements = [
     'requests>=2.10.1',
 ]
 
-VERSION = (1, 0, 17)     # (1, 0, 7, 'dev0')
+VERSION = (1, 0, 17)
 __version__ = '.'.join(map(str, VERSION))
 
 setup(
-    name='arrebol',  # Nome (não precisa ser o nome do repositório, nem de qualquer pasta...)
+    name='arrebol',
     version=__version__,
     author='Michel Metran',
     author_email='michelmetran@gmail.com',
@@ -20,7 +20,7 @@ setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/traquitanas/arrebol',
-    package_dir = {'': 'src'}, # Our packages live under src but src is not a package itself
+    package_dir = {'': 'src'},
     packages=find_packages('src', exclude=['test']),
     install_requires=requirements,
     keywords='python, endereço aleatorio, address',
@@ -32,4 +32,3 @@ setup(
         'Intended Audience :: Developers',
     ],
 )
-
