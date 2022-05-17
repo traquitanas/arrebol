@@ -4,7 +4,6 @@ with open('README.md', 'r') as f:
     long_description = f.read()
 
 requirements = [
-    #'pycep_correios>=5.0.0',
     'requests>=2.10.1',
 ]
 

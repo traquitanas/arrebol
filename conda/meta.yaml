@@ -1,49 +1,27 @@
 {% set data = load_setup_py_data() %}
-#{% set name = "arrebol" %}
-#{% set version = "1.0.9" %}
 
 package:
   name: arrebol
   version: {{ data.get('version') }}
 
 source:
-  path: ..
-
-# Se usar o build aqui, com pip, não deve ser usando o arquivo build.sh (e setuptools).
-# build:
-#   number: 0
-#   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --use-feature=in-tree-build -vv "
+  path: ../src
 
 requirements:
   build:
     - python
     - setuptools
-    # - numpy>=1.11.1,<=1.16.0
-    # - conda-verify
-
-  # host:
-  #   - pip
-  #   - python 3.6
-  #   - requests
-  #   - numpy>=1.11.1,<=1.16.0
-  #   - setuptools
-  #   - pycep_correios
 
   run:
     - python
     - requests
-  # - numpy>=1.11.1,<=1.16.0
-
-# test:
-#   imports:
-#     - arrebol
 
 about:
-  home: https://github.com/traquitanas/arrebol # {{ data['url'] }}
-  license: MIT # {{ data['license'] }}
+  home: https://github.com/traquitanas/arrebol
+  license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: sss #{{ data['description'] }}
+  summary: sss
   description: |
     Teste do Pacote
   doc_url: https://github.com/traquitanas/arrebol
