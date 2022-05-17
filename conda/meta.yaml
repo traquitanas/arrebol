@@ -18,21 +18,21 @@ requirements:
   build:
     - python
     - setuptools
-    #- numpy>=1.11.1,<=1.16.0
-#    - conda-verify
+    # - numpy>=1.11.1,<=1.16.0
+    # - conda-verify
 
   # host:
   #   - pip
   #   - python 3.6
   #   - requests
-  #   #- numpy>=1.11.1,<=1.16.0
+  #   - numpy>=1.11.1,<=1.16.0
   #   - setuptools
-    #- pycep_correios
+  #   - pycep_correios
 
   run:
     - python
-    #- numpy>=1.11.1,<=1.16.0
     - requests
+  # - numpy>=1.11.1,<=1.16.0
 
 # test:
 #   imports:
@@ -43,7 +43,7 @@ about:
   license: MIT # {{ data['license'] }}
   license_family: MIT
   license_file: LICENSE
-  summary: {{ data['description'] }}
+  summary: sss #{{ data['description'] }}
   description: |
     Teste do Pacote
   doc_url: https://github.com/traquitanas/arrebol
