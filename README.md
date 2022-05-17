@@ -1,23 +1,16 @@
 # Arrebol
 
-
 <br>
+
+Pacote criado com a finalidade única de testar como subir um pacote para o PyPi e Conda.
 
 - https://github.com/traquitanas/arrebol
 - https://anaconda.org/michelmetran/arrebol
-
-
-
-Pacote criado com a finalidade única de testar como subir um pacote para o conda.
-
-O pacote deve ficar aqui:
-- https://anaconda.org/michelmetran/dashboard
-- https://anaconda.org/michelmetran/repo
-
+- https://pypi.org/project/arrebol/
 
 <br>
 
-----
+---
 
 ### Passos
 
@@ -37,12 +30,11 @@ conda-build ./conda -c src/label/main
 
 <br>
 
-----
+---
 
 ## GitActions
 
-https://github.com/fcakyon/conda-publish-action
-Há um GitAction para publicar pacotes no Conda. A vantagem é que ele converte o *build* para outras plataformas (adicionar converters)!
+Há um [GitAction](https://github.com/fcakyon/conda-publish-action) para publicar pacotes no Conda. A vantagem é que ele converte o _build_ para outras plataformas (adicionar converters)!
 
 ```bash
 # Convert Package to Other Platforms
@@ -61,7 +53,7 @@ done
 
 <br>
 
-----
+---
 
 ### Referências
 

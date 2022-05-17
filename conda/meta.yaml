@@ -46,6 +46,5 @@ about:
   summary: sssss # {{ data['description'] }}
   description: |
     Teste do Pacote
-
   doc_url: https://github.com/traquitanas/arrebol
   dev_url: https://github.com/traquitanas/arrebol
