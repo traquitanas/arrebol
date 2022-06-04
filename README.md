@@ -12,7 +12,7 @@ Pacote criado com a finalidade única de testar como subir um pacote para o PyPi
 
 ---
 
-### Passos
+### *Build Manually*
 
 Inicialmente é necessário instalar o [conda-build](https://docs.conda.io/projects/conda-build/en/latest/index.html) com o comando:
 
@@ -23,9 +23,10 @@ conda install conda-build
 
 <br>
 
+Uma vez instalado, é possível buildar com o comando abaixo:
+
 ```bash
-conda activate pablocarreira-py39
-conda-build ./conda -c src/label/main
+conda-build ./conda/
 ```
 
 <br>
@@ -64,10 +65,13 @@ done
 
 ### Referências
 
-- https://www.asmeurer.com/conda-docs-test/docs/building/meta-yaml.html
-- https://docs.conda.io/projects/conda-build/en/latest/concepts/channels.html
-- https://levelup.gitconnected.com/publishing-your-python-package-on-conda-and-conda-forge-309a405740cf
-- https://www.youtube.com/watch?v=HSK-6dCnYVQ
-- https://giswqs.medium.com/building-a-conda-package-and-uploading-it-to-anaconda-cloud-6a3abd1c5c52
+- [Conda-Build: Conda channels](https://docs.conda.io/projects/conda-build/en/latest/concepts/channels.html)
+- [Medium: Publishing Your Python Package on conda and conda-forge](https://levelup.gitconnected.com/publishing-your-python-package-on-conda-and-conda-forge-309a405740cf)
+- [YouTube: Building and Distributing Python Software with Conda](https://www.youtube.com/watch?v=HSK-6dCnYVQ)
+- [Medium: Building a conda package and uploading it to Anaconda Cloud](https://giswqs.medium.com/building-a-conda-package-and-uploading-it-to-anaconda-cloud-6a3abd1c5c52) Não gostei pois é preciso etapas manuais
+
+
+**GitActions**
+
 - https://github.com/maxibor/conda-package-publish-action
 - https://github.com/rfun/tethysapp-servicetest/blob/master/.github/workflows/main.yml

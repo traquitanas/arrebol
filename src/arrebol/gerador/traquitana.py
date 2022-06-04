@@ -51,32 +51,33 @@ def get_list_ceps_bairros(estado='sp', municipio='piracicaba', loops=20):
     return list_ceps, list_bairros
 
 
-def get_random_complete_address(cep):
-    """
-    Pega um endereço a parte de um CEP
+# def get_random_complete_address(cep):
+#     """
+#     Pega um endereço a parte de um CEP
 
-    :param cep: Definição do CEP que se deseja obter o endereço (Exemplo: '13419-398')
-    :return: String com o endereço completo.
+#     :param cep: Definição do CEP que se deseja obter o endereço (Exemplo: '13419-398')
+#     :return: String com o endereço completo.
 
-    """
-    # Endereço
-    end = get_address_from_cep(cep, webservice=WebService.VIACEP)
+#     """
+#     # Endereço
+#     end = get_address_from_cep(cep, webservice=WebService.VIACEP)
 
-    # Adiciona um número aleatório
-    end['complemento'] = '{}'.format(random.randrange(1, 999))
+#     # Adiciona um número aleatório
+#     end['complemento'] = '{}'.format(random.randrange(1, 999))
 
-    # Cria uma chave no dict com Endereço Completo
-    end['endereco_completo'] = '{}, {} - {} - {}, {} - CEP: {}'.format(
-        end['logradouro'],
-        end['complemento'],
-        end['bairro'],
-        end['cidade'],
-        end['uf'],
-        end['cep'],
-    )
-    print('Endereço Aleatório:\n{}'.format(end['endereco_completo']))
-    return end['endereco_completo']
+#     # Cria uma chave no dict com Endereço Completo
+#     end['endereco_completo'] = '{}, {} - {} - {}, {} - CEP: {}'.format(
+#         end['logradouro'],
+#         end['complemento'],
+#         end['bairro'],
+#         end['cidade'],
+#         end['uf'],
+#         end['cep'],
+#     )
+#     print('Endereço Aleatório:\n{}'.format(end['endereco_completo']))
+#     return end['endereco_completo']
 
 
 if __name__ == '__main__':
-    print('Fim')
+    #print('Fim')
+    get_list_ceps_bairros(estado='sp', municipio='piracicaba', loops=20)
