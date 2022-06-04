@@ -12,7 +12,7 @@ Pacote criado com a finalidade única de testar como subir um pacote para o PyPi
 
 ---
 
-### *Build Manually*
+### _Build Manually_
 
 Inicialmente é necessário instalar o [conda-build](https://docs.conda.io/projects/conda-build/en/latest/index.html) com o comando:
 
@@ -69,7 +69,6 @@ done
 - [Medium: Publishing Your Python Package on conda and conda-forge](https://levelup.gitconnected.com/publishing-your-python-package-on-conda-and-conda-forge-309a405740cf)
 - [YouTube: Building and Distributing Python Software with Conda](https://www.youtube.com/watch?v=HSK-6dCnYVQ)
 - [Medium: Building a conda package and uploading it to Anaconda Cloud](https://giswqs.medium.com/building-a-conda-package-and-uploading-it-to-anaconda-cloud-6a3abd1c5c52) Não gostei pois é preciso etapas manuais
-
 
 **GitActions**
 

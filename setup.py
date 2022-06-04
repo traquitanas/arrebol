@@ -7,7 +7,7 @@ requirements = [
     'requests>=2.10.1',
 ]
 
-VERSION = (1, 0, 17)
+VERSION = (1, 0, 18)
 __version__ = '.'.join(map(str, VERSION))
 
 setup(
